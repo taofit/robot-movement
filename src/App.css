@@ -1,9 +1,11 @@
 .App {
-  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 18vmin;
   pointer-events: none;
 }
 
@@ -14,8 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +36,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+form label {
+  margin: 15px 15px 15px 0;
+}
+
+form label.main-field {
+  display: block;
+  font-weight: bold;
+}
+form input {
+  margin: 0 10px 10px 0
+}
+form span {
+  color: red;
 }
