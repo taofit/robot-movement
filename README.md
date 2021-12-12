@@ -5,12 +5,13 @@ The initial position of the robot in the room is in a location (X, Y) and its or
 When robot is on the edge of the room and try to move against the wall. The robot will be obviously not able to move. After certain movements such as under a serial of instruction `FRLLLRFLFFLFLFRLRLRF`
 the program should give the correct final location of the robot and which orientation it is facing.
 When some wrong inputs are entered, the robot should not move, such as the room size has negative value, robot's initial location is not in the room, or the instruction contains the wrong command 
-for example: `juy` instead of command from `lfr`;
+for example: `juyloedk` instead of command from `llfrffr`;
     
     Install the project:
 1. first git clone: `https://github.com/taofit/robot-movement.git`
 2. then under the project folder, enter command: `npm install`, 
 3. last: run `yarn start`   
+4. run test: either go to `src/App.test.tsx` run each individual function, or in the project folder, run command: `yarn test` and enter `a` to run all tests
     
 # Getting Started with Create React App
 
