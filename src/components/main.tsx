@@ -33,9 +33,6 @@ const Main = () => {
         setInitPosition({...initPosition, Y: Number(e.target.value)});
     };
 
-    // const setOrientationValue = (e: ChangeEvent<HTMLInputElement>) => {
-    //     setOrientation(e.target.value.toUpperCase());
-    // }
     const setOrientationValue = (e: ChangeEvent<HTMLSelectElement>) => {
         setOrientation(e.target.value.toUpperCase());
     }
