@@ -13,7 +13,7 @@ const options = ['E', 'N', 'S', 'W'];
 const Main = () => {
     const [size, setSize] = useState<RoomSize>({W: 5, D: 5});
     const [initPosition, setInitPosition] = useState<Position>({X: 0, Y: 0});
-    const [orientation, setOrientation] = useState<string>('');
+    const [orientation, setOrientation] = useState<string>('E');
     const [command, setCommand] = useState<string>('');
     const [error, setError] = useState<Error>({...INIT_ERROR});
     const [result, setResult] = useState<Result>({finalLocation:{...initPosition}, finalOrientation: orientation});

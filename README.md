@@ -7,6 +7,11 @@ the program should give the correct final location of the robot and which orient
 When some wrong inputs are entered, the robot should not move, such as the room size has negative value, robot's initial location is not in the room, or the instruction contains the wrong command 
 for example: `juy` instead of command from `lfr`;
     
+    Install the project:
+1. first git clone: `https://github.com/taofit/robot-movement.git`
+2. then under the project folder, enter command: `npm install`, 
+3. last: run `yarn start`   
+    
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
