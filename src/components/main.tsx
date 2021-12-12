@@ -1,4 +1,4 @@
-import React, {ChangeEvent, ChangeEventHandler, FormEvent, useState} from 'react';
+import React, {ChangeEvent, FormEvent, useState} from 'react';
 import {RoomSize, Position, Error, Result} from '../helpers/types';
 import {finalPosition, isCommand, isOrientation, isPosition, isSize} from '../helpers/helper';
 
@@ -36,8 +36,8 @@ const Main = () => {
     const setOrientationValue = (e: ChangeEvent<HTMLSelectElement>) => {
         setOrientation(e.target.value.toUpperCase());
     }
-    const setCommandValue = (e: ChangeEvent<HTMLInputElement>) => {
-        setCommand(e.target.value.toUpperCase());
+    const setCommandValue = (e: ChangeEvent<HTMLTextAreaElement>) => {
+        setCommand(e.target.value.trim().toUpperCase());
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -97,7 +97,7 @@ const Main = () => {
             </div>
             <div>
                 <label className="main-field" htmlFor="command">Command:</label>
-                <input name="command" className="command" type="text" value={command} onChange={setCommandValue} />
+                <textarea name="command" className="command" rows={4} cols={60} value={command} onChange={setCommandValue} />
                 {error?.command && <span>{error.command}</span>}
             </div>
             <button type="submit">Submit</button>

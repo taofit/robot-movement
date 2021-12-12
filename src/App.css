@@ -43,7 +43,7 @@ form input {
   margin: 0 10px 10px 0
 }
 form input.command {
-  width: 290px;
+  width: 450px;
 }
 form span {
   color: red;
