@@ -9,12 +9,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   height: 200px;
   display: flex;
@@ -48,6 +42,12 @@ form label.main-field {
 form input {
   margin: 0 10px 10px 0
 }
+form input.command {
+  width: 290px;
+}
 form span {
   color: red;
+}
+.result-show {
+  margin: 10px 0;
 }

@@ -1,3 +1,12 @@
+# Robot movement 
+
+A robot is placed in a room size of width and depth(W,D). The instruction to robot has L: turn left, R: turn right, F: move forward.
+The initial position of the robot in the room is in a location (X, Y) and its orientation(N,E,S,W) stand for north, east, south, and west, is orientation the robot is facing.
+When robot is on the edge of the room and try to move against the wall. The robot will be obviously not able to move. After certain movements such as under an instruction `FRLLLRFLFFLFLFRLRLRF`
+the program should give the correct location of the robot and which orientation it is facing.
+when some wrong input are enter, the robot will not move, such as the room size has negative value, robot initial location is not in the room, or the instruction contains the wrong command 
+for example: `juy` instead of command from `lfr`;
+    
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
