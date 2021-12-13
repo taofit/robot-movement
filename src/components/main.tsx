@@ -1,6 +1,6 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import {RoomSize, Position, Error, Result} from '../helpers/types';
-import {finalPosition, isCommand, isOrientation, isPosition, isSize} from '../helpers/helper';
+import {finalPosition, isCommand, isInRoom, isOrientation, isSize} from '../helpers/helper';
 
 const MIN_WIDTH = 1;
 const MIN_DEPTH = 1;
@@ -53,7 +53,7 @@ const Main = () => {
         if (!isSize(size)) {
             curError.size = 'wrong size';
         }
-        if (!isPosition(initPosition)) {
+        if (!isInRoom(size, initPosition)) {
             curError.position = 'wrong position';
         }
         setError(curError);
