@@ -8,7 +8,7 @@ const MIN_X = 0;
 const MIN_Y = 0;
 const INIT_ERROR = {command: '', orientation: '', position: '', size: ''};
 
-const options = ['E', 'N', 'S', 'W'];
+const OPTIONS = ['E', 'N', 'S', 'W'];
 
 const Main = () => {
     const [size, setSize] = useState<RoomSize>({W: 5, D: 5});
@@ -89,7 +89,7 @@ const Main = () => {
             <div>
                 <label className="main-field" htmlFor="orientation">Initial orientation:</label>
                 <select value={orientation} name="orientation" onChange={setOrientationValue}>
-                    {options.map((option) => (
+                    {OPTIONS.map((option) => (
                         <option value={option} key={option}>{option}</option>
                     ))}
                 </select>
